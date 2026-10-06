@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>人工智能与新质生产力 | 数据专题</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+</head>
+<body>
+
+  <!-- 背景层 -->
+  <div class="bg-layer">
+    <div class="grid-layer"></div>
+    <div class="glow-layer"></div>
+  </div>
+
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="brand">
+        <span class="logo-dot"></span>
+        <span class="brand-text">AI · 新质生产力</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#overview">数据概览</a></li>
+        <li><a href="#growth">产业增长</a></li>
+        <li><a href="#industry">行业渗透</a></li>
+        <li><a href="#value">价值维度</a></li>
+        <li><a href="#region">区域发展</a></li>
+        <li><a href="#job">就业影响</a></li>
+        <li><a href="#cases">应用案例</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero 首屏 -->
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">数据专题 · 2025</p>
+      <h1 class="hero-title">
+        人工智能正在重构<br/>
+        <span class="gradient-text">新质生产力</span>
+      </h1>
+      <p class="hero-subtitle">
+        从产业规模、行业渗透、价值维度到区域协同，用数据看见 AI 对经济社会的深层改变。
+      </p>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="stat-number" data-target="5786">0</div>
+          <div class="stat-label">AI 核心产业规模（亿元）</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-number" data-target="16500">0</div>
+          <div class="stat-label">带动相关产业规模（亿元）</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-number" data-target="42">0</div>
+          <div class="stat-label">生产效率平均提升（%）</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-number" data-target="440">0</div>
+          <div class="stat-label">新增就业岗位（万个）</div>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <span>向下探索数据</span>
+        <i class="arrow-down"></i>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 数据概览 -->
+    <section id="overview" class="section">
+      <div class="section-head">
+        <span class="section-index">01</span>
+        <h2 class="section-title">数据概览</h2>
+        <p class="section-desc">人工智能已经从技术概念进入产业深水区，成为驱动增长、效率提升与结构升级的关键变量。</p>
+      </div>
+
+      <div class="overview-grid">
+        <div class="overview-card big-card">
+          <h3>核心产业与带动效应</h3>
+          <p class="card-note">2019—2024 年中国 AI 核心产业及带动相关产业规模变化</p>
+          <div id="overviewChart" class="chart"></div>
+        </div>
+
+        <div class="overview-card">
+          <h3>增长速度</h3>
+          <div class="kpi-row">
+            <div class="kpi-item">
+              <div class="kpi-value">32.8%</div>
+              <div class="kpi-name">核心产业年均增速</div>
+            </div>
+            <div class="kpi-item">
+              <div class="kpi-value">28.6%</div>
+              <div class="kpi-name">带动产业年均增速</div>
+            </div>
+          </div>
+          <div class="conclusion-box">
+            <p>结论：AI 对上下游产业的带动作用显著，已具备新质生产力的规模化特征。</p>
+          </div>
+        </div>
+
+        <div class="overview-card">
+          <h3>投资热度</h3>
+          <div id="investChart" class="chart-small"></div>
+          <div class="conclusion-box">
+            <p>结论：算法、算力与数据成为 AI 投资的三条主线。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 产业增长 -->
+    <section id="growth" class="section section-alt">
+      <div class="section-head">
+        <span class="section-index">02</span>
+        <h2 class="section-title">产业增长</h2>
+        <p class="section-desc">AI 产业规模持续扩张，正在形成“核心技术—基础设施—行业应用”的完整生态。</p>
+      </div>
+
+      <div class="growth-layout">
+        <div class="growth-chart-box">
+          <div id="growthChart" class="chart chart-large"></div>
+        </div>
+
+        <div class="growth-side">
+          <div class="growth-item">
+            <div class="growth-year">2021</div>
+            <div class="growth-text">产业数字化需求爆发，AI 进入金融、零售、医疗等场景落地期。</div>
+          </div>
+          <div class="growth-item">
+            <div class="growth-year">2022</div>
+            <div class="growth-text">算力基础设施建设加速，智能制造与自动驾驶成为重点方向。</div>
+          </div>
+          <div class="growth-item">
+            <div class="growth-year">2023</div>
+            <div class="growth-text">大模型技术推动生成式 AI 热潮，产业应用边界进一步扩展。</div>
+          </div>
+          <div class="growth-item">
+            <div class="growth-year">2024</div>
+            <div class="growth-text">AI 与实体经济深度融合，新质生产力特征更加清晰。</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 行业渗透 -->
+    <section id="industry" class="section">
+      <div class="section-head">
+        <span class="section-index">03</span>
+        <h2 class="section-title">行业渗透</h2>
+        <p class="section-desc">AI 正在从消费互联网向制造、交通、医疗、农业等实体行业延伸。</p>
+      </div>
+
+      <div class="industry-layout">
+        <div id="industryChart" class="chart chart-large"></div>
+        <div class="industry-notes">
+          <div class="note-card">
+            <h4>智能制造</h4>
+            <p>AI 提升生产排产、质量检测、设备维护的智能化水平。</p>
+          </div>
+          <div class="note-card">
+            <h4>智慧交通</h4>
+            <p>自动驾驶、智能调度与交通预测提升运输系统效率。</p>
+          </div>
+          <div class="note-card">
+            <h4>智慧医疗</h4>
+            <p>影像诊断、药物研发和健康管理加速医疗服务升级。</p>
+          </div>
+          <div class="note-card">
+            <h4>智慧农业</h4>
+            <p>识别病虫害、精准灌溉和产量预测推动农业精细化。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 价值维度 -->
+    <section id="value" class="section section-alt">
+      <div class="section-head">
+        <span class="section-index">04</span>
+        <h2 class="section-title">价值维度</h2>
+        <p class="section-desc">AI 对生产力的改变不是单一效率提升，而是效率、成本、创新、质量与安全的系统升级。</p>
+      </div>
+
+      <div class="value-grid">
+        <div id="valueChart" class="chart"></div>
+
+        <div class="value-list">
+          <div class="value-item">
+            <div class="value-bar">
+              <span class="bar-fill" style="width:85%"></span>
+            </div>
+            <div class="value-text">
+              <h5>生产效率</h5>
+              <p>智能分析与自动决策提升单位时间产出。</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-bar">
+              <span class="bar-fill" style="width:78%"></span>
+            </div>
+            <div class="value-text">
+              <h5>成本控制</h5>
+              <p>降低重复劳动、检测成本与设备损耗。</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-bar">
+              <span class="bar-fill" style="width:92%"></span>
+            </div>
+            <div class="value-text">
+              <h5>创新能力</h5>
+              <p>加速算法、模型与产品方案的迭代速度。</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-bar">
+              <span class="bar-fill" style="width:88%"></span>
+            </div>
+            <div class="value-text">
+              <h5>产品质量</h5>
+              <p>识别缺陷、稳定流程，提高一致性。</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <div class="value-bar">
+              <span class="bar-fill" style="width:80%"></span>
+            </div>
+            <div class="value-text">
+              <h5>安全保障</h5>
+              <p>风险预警、异常检测提升系统稳定性。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 区域发展 -->
+    <section id="region" class="section">
+      <div class="section-head">
+        <span class="section-index">05</span>
+        <h2 class="section-title">区域发展</h2>
+        <p class="section-desc">AI 产业发展呈现明显的区域集聚特征，京津冀、长三角、珠三角成为主要增长极。</p>
+      </div>
+
+      <div class="region-layout">
+        <div id="regionChart" class="chart chart-large"></div>
+        <div class="region-side">
+          <div class="region-card">
+            <h4>第一梯队</h4>
+            <p>北京、上海、深圳、杭州等城市在人才、数据、算力和应用场景上具有综合优势。</p>
+          </div>
+          <div class="region-card">
+            <h4>第二梯队</h4>
+            <p>广州、南京、成都、武汉、西安等城市依托高校、制造业和区域市场快速追赶。</p>
+          </div>
+          <div class="region-card">
+            <h4>协同趋势</h4>
+            <p>区域间正在形成“研发—制造—应用”的分工协同。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 就业影响 -->
+    <section id="job" class="section section-alt">
+      <div class="section-head">
+        <span class="section-index">06</span>
+        <h2 class="section-title">就业影响</h2>
+        <p class="section-desc">AI 会替代一部分重复性岗位，但也会创造新岗位并推动传统岗位转型。</p>
+      </div>
+
+      <div class="job-grid">
+        <div class="job-card">
+          <div id="jobChart" class="chart"></div>
+        </div>
+        <div class="job-card">
+          <h3>岗位结构变化</h3>
+          <div class="job-list">
+            <div class="job-row up">
+              <span class="job-label">AI 研发工程师</span>
+              <span class="job-change">增长显著</span>
+            </div>
+            <div class="job-row up">
+              <span class="job-label">数据标注与训练师</span>
+              <span class="job-change">需求增长</span>
+            </div>
+            <div class="job-row up">
+              <span class="job-label">AI 伦理与治理岗位</span>
+              <span class="job-change">新兴增长</span>
+            </div>
+            <div class="job-row down">
+              <span class="job-label">重复性数据录入</span>
+              <span class="job-change">下降明显</span>
+            </div>
+            <div class="job-row down">
+              <span class="job-label">基础流水线检测</span>
+              <span class="job-change">部分替代</span>
+            </div>
+          </div>
+        </div>
+        <div class="job-card">
+          <h3>结论</h3>
+          <div class="conclusion-box conclusion-blue">
+            <p>AI 对就业的影响不是简单替代，而是就业结构的重构：低技能重复岗位减少，高技能与复合型岗位增加。</p>
+          </div>
+          <div class="conclusion-box">
+            <p>劳动者需要提升数据能力、模型理解能力与跨行业问题解决能力。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 应用案例 -->
+    <section id="cases" class="section">
+      <div class="section-head">
+        <span class="section-index">07</span>
+        <h2 class="section-title">应用案例</h2>
+        <p class="section-desc">AI 新质生产力最终要落到实体产业，形成可感知的效率提升与价值创造。</p>
+      </div>
+
+      <div class="cases-grid">
+        <div class="case-card">
+          <div class="case-icon">01</div>
+          <h3>智能制造</h3>
+          <p>AI 视觉检测识别产品缺陷，预测性维护降低设备停机时间。</p>
+          <div class="case-tags">
+            <span>缺陷检测</span>
+            <span>预测维护</span>
+            <span>智能排产</span>
+          </div>
+        </div>
+        <div class="case-card">
+          <div class="case-icon">02</div>
+          <h3>智慧医疗</h3>
+          <p>AI 辅助影像诊断，加速药物筛选，帮助医生更早发现病灶。</p>
+          <div class="case-tags">
+            <span>影像诊断</span>
+            <span>药物筛选</span>
+            <span>精准医疗</span>
+          </div>
+        </div>
+        <div class="case-card">
+          <div class="case-icon">03</div>
+          <h3>自动驾驶</h3>
+          <p>AI 感知车辆、行人与道路环境，推动交通系统智能化升级。</p>
+          <div class="case-tags">
+            <span>环境感知</span>
+            <span>路径规划</span>
+            <span>智能交通</span>
+          </div>
+        </div>
+        <div class="case-card">
+          <div class="case-icon">04</div>
+          <h3>智慧农业</h3>
+          <p>AI 识别病虫害、分析土壤状态，帮助农民做出更精准决策。</p>
+          <div class="case-tags">
+            <span>病虫害识别</span>
+            <span>精准灌溉</span>
+            <span>产量预测</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 总结 -->
+    <section class="section summary-section">
+      <div class="summary-inner">
+        <h2>总结</h2>
+        <p>人工智能正在通过技术渗透、产业重构和效率提升，成为新质生产力的重要引擎。理解 AI，不仅要理解算法和模型，更要理解它对产业、就业、区域和社会结构的深层影响。</p>
+        <div class="summary-tags">
+          <span>效率提升</span>
+          <span>结构升级</span>
+          <span>实体融合</span>
+          <span>创新驱动</span>
+          <span>就业重构</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>人工智能与新质生产力数据专题 | 课程作业展示</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
